@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html class="has-navbar-fixed-top">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nearfit.IN</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <!-- Bulma Version 0.6.0 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.1/css/bulma.min.css" />
+  <link rel="stylesheet" href="/static/css/landing.css" />
+</head>
+<body >
+  <section class="hero is-fullheight is-default is-bold">
+  <div class="hero-head">
+    <nav class="navbar is-fixed-top has-shadow" style="background-color: #ffffff">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item" href="/">
+            <h2>NearFit.IN</h2>
+          </a>
+          <span class="navbar-burger burger" data-target="navbarMenu">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenu" class="navbar-menu">
+          <div class="navbar-end">
+            <a class="navbar-item is-active">
+              Home
+            </a>
+            <a class="navbar-item">
+              Galaxy CRM
+            </a>
+            <a class="navbar-item">
+              Features
+            </a>
+            <div class="navbar-item">
+                <div class="field is-grouped">
+                    <p class="control">
+                        <a class="bd-tw-button button is-primary" href="/accounts/login/">
+                        <span class="icon">
+                            <i class="fa fa-sign-in"></i>
+                        </span>
+                        <span>
+                        Sign In
+                        </span>
+                        </a>
+                    </p>
+                    <p class="control">
+                        <a class="bd-tw-button button is-info" href="/accounts/signup/">
+                        <span class="icon">
+                            <i class="fa fa-user-plus"></i>
+                        </span>
+                        <span>
+                        Sign Up
+                        </span>
+                        </a>
+                    </p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <div align = "center" class="under-nav">
+        <p align = "center" class="under-nav-text"><b>Latest Zumba</b> offers!</p>
+        <a  class="button is-danger">View all offers</a>
+    </div>
+  </div>
+    <div style = "background-image : url("http://wallpaperzone.co/wp-content/uploads/2017/04/fitness.jpg") !important " class="hero-body">
+      <div class="container has-text-centered">
+        <div class="columns is-vcentered">
+          <div class="column is-10 is-offset-1 is-centered">
+            <h1 class="title is-2">
+              Next generation fitness
+            </h1>
+            <h2 class="subtitle is-4">
+              We care about your health and fitness :)
+            </h2>
+            <br>
+            <section class="hero is-info">
+                <div class="hero-body">
+                    <div class="container">
+                        <p class="has-text-centered is-centered">
+                            <div class="field is-grouped  has-addons has-addons-centered">
+                                <p class="control">
+                                    <div>
+                                    <input id="autocomplete-input" name="q" class="input is-expanded is-medium" type="text" placeholder="Find a fitness center near you..">
+                                    <div id="autocomplete-suggestions"></div>
+                                    </div>
+                                </p>
+                                <p class="control">
+                                    <a class="button is-medium is-primary">
+                                    Search
+                                    </a>
+                                </p>
+                            </div>
+                        <a href="/gyms-near-me" class="is-title">Gyms near me</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="hero is-medium is-light">
+      <div class="hero-body">
+            <h1 class="title is-2">
+                #Features
+            </h1>
+            <div class="columns">
+                <div class="column">
+                    <div class="box">Manage users with ease</div>
+                </div>
+                <div class="column">
+                    <div class="box">All in one Analytics</div>
+                </div>
+                <div class="column">
+                    <div class="box">Track and Followup Leads</div>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="column">
+                    <div class="box">Automatic SMS and Email</div>
+                </div>
+                <div class="column">
+                    <div class="box">Filter out high risk customers</div>
+                </div>
+                <div class="column">
+                    <div class="box">Revenue predictor</div>
+                </div>
+            </div>
+      </div>
+  </section>
+  <section class="hero is-dark">
+    <div class="hero-foot">
+        <div class="container">
+            <div class="tabs is-centered">
+            <ul>
+                <li><a>&#169; Nex Fitzap Pvt. Ltd.</a></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+  </section>
+  <script>
+        (function() {
+            var burger = document.querySelector('.navbar-burger');
+            var menu = document.querySelector('.navbar-menu');
+            burger.addEventListener('click', function() {
+                burger.classList.toggle('is-active');
+                menu.classList.toggle('is-active');
+            });        
+        })();
+
+        var autoComplete=function(){function e(e){function t(e,t){return e.classList?e.classList.contains(t):new RegExp("\\b"+t+"\\b").test(e.className)}function o(e,t,o){e.attachEvent?e.attachEvent("on"+t,o):e.addEventListener(t,o)}function s(e,t,o){e.detachEvent?e.detachEvent("on"+t,o):e.removeEventListener(t,o)}function n(e,s,n,l){o(l||document,s,function(o){for(var s,l=o.target||o.srcElement;l&&!(s=t(l,e));)l=l.parentElement;s&&n.call(l,o)})}if(document.querySelector){var l={selector:0,source:0,minChars:3,delay:150,offsetLeft:0,offsetTop:1,cache:1,menuClass:"",renderItem:function(e,t){t=t.replace(/[-\/\\^$*+?.()|[\]{}]/g,"\\$&");var o=new RegExp("("+t.split(" ").join("|")+")","gi");return'<div class="autocomplete-suggestion" data-val="'+e+'">'+e.replace(o,"<b>$1</b>")+"</div>"},onSelect:function(){}};for(var c in e)e.hasOwnProperty(c)&&(l[c]=e[c]);for(var a="object"==typeof l.selector?[l.selector]:document.querySelectorAll(l.selector),u=0;u<a.length;u++){var i=a[u];i.sc=document.createElement("div"),i.sc.className="autocomplete-suggestions "+l.menuClass,i.autocompleteAttr=i.getAttribute("autocomplete"),i.setAttribute("autocomplete","off"),i.cache={},i.last_val="",i.updateSC=function(e,t){var o=i.getBoundingClientRect();if(i.sc.style.left=Math.round(o.left+(window.pageXOffset||document.documentElement.scrollLeft)+l.offsetLeft)+"px",i.sc.style.top=Math.round(o.bottom+(window.pageYOffset||document.documentElement.scrollTop)+l.offsetTop)+"px",i.sc.style.width=Math.round(o.right-o.left)+"px",!e&&(i.sc.style.display="block",i.sc.maxHeight||(i.sc.maxHeight=parseInt((window.getComputedStyle?getComputedStyle(i.sc,null):i.sc.currentStyle).maxHeight)),i.sc.suggestionHeight||(i.sc.suggestionHeight=i.sc.querySelector(".autocomplete-suggestion").offsetHeight),i.sc.suggestionHeight))if(t){var s=i.sc.scrollTop,n=t.getBoundingClientRect().top-i.sc.getBoundingClientRect().top;n+i.sc.suggestionHeight-i.sc.maxHeight>0?i.sc.scrollTop=n+i.sc.suggestionHeight+s-i.sc.maxHeight:0>n&&(i.sc.scrollTop=n+s)}else i.sc.scrollTop=0},o(window,"resize",i.updateSC),document.body.appendChild(i.sc),n("autocomplete-suggestion","mouseleave",function(){var e=i.sc.querySelector(".autocomplete-suggestion.selected");e&&setTimeout(function(){e.className=e.className.replace("selected","")},20)},i.sc),n("autocomplete-suggestion","mouseover",function(){var e=i.sc.querySelector(".autocomplete-suggestion.selected");e&&(e.className=e.className.replace("selected","")),this.className+=" selected"},i.sc),n("autocomplete-suggestion","mousedown",function(e){if(t(this,"autocomplete-suggestion")){var o=this.getAttribute("data-val");i.value=o,l.onSelect(e,o,this),i.sc.style.display="none"}},i.sc),i.blurHandler=function(){try{var e=document.querySelector(".autocomplete-suggestions:hover")}catch(t){var e=0}e?i!==document.activeElement&&setTimeout(function(){i.focus()},20):(i.last_val=i.value,i.sc.style.display="none",setTimeout(function(){i.sc.style.display="none"},350))},o(i,"blur",i.blurHandler);var r=function(e){var t=i.value;if(i.cache[t]=e,e.length&&t.length>=l.minChars){for(var o="",s=0;s<e.length;s++)o+=l.renderItem(e[s],t);i.sc.innerHTML=o,i.updateSC(0)}else i.sc.style.display="none"};i.keydownHandler=function(e){var t=window.event?e.keyCode:e.which;if((40==t||38==t)&&i.sc.innerHTML){var o,s=i.sc.querySelector(".autocomplete-suggestion.selected");return s?(o=40==t?s.nextSibling:s.previousSibling,o?(s.className=s.className.replace("selected",""),o.className+=" selected",i.value=o.getAttribute("data-val")):(s.className=s.className.replace("selected",""),i.value=i.last_val,o=0)):(o=40==t?i.sc.querySelector(".autocomplete-suggestion"):i.sc.childNodes[i.sc.childNodes.length-1],o.className+=" selected",i.value=o.getAttribute("data-val")),i.updateSC(0,o),!1}if(27==t)i.value=i.last_val,i.sc.style.display="none";else if(13==t||9==t){var s=i.sc.querySelector(".autocomplete-suggestion.selected");s&&"none"!=i.sc.style.display&&(l.onSelect(e,s.getAttribute("data-val"),s),setTimeout(function(){i.sc.style.display="none"},20))}},o(i,"keydown",i.keydownHandler),i.keyupHandler=function(e){var t=window.event?e.keyCode:e.which;if(!t||(35>t||t>40)&&13!=t&&27!=t){var o=i.value;if(o.length>=l.minChars){if(o!=i.last_val){if(i.last_val=o,clearTimeout(i.timer),l.cache){if(o in i.cache)return void r(i.cache[o]);for(var s=1;s<o.length-l.minChars;s++){var n=o.slice(0,o.length-s);if(n in i.cache&&!i.cache[n].length)return void r([])}}i.timer=setTimeout(function(){l.source(o,r)},l.delay)}}else i.last_val=o,i.sc.style.display="none"}},o(i,"keyup",i.keyupHandler),i.focusHandler=function(e){i.last_val="\n",i.keyupHandler(e)},l.minChars||o(i,"focus",i.focusHandler)}this.destroy=function(){for(var e=0;e<a.length;e++){var t=a[e];s(window,"resize",t.updateSC),s(t,"blur",t.blurHandler),s(t,"focus",t.focusHandler),s(t,"keydown",t.keydownHandler),s(t,"keyup",t.keyupHandler),t.autocompleteAttr?t.setAttribute("autocomplete",t.autocompleteAttr):t.removeAttribute("autocomplete"),document.body.removeChild(t.sc),t=null}}}}return e}();!function(){"function"==typeof define&&define.amd?define("autoComplete",function(){return autoComplete}):"undefined"!=typeof module&&module.exports?module.exports=autoComplete:window.autoComplete=autoComplete}();
+        
+        autocomplete_suggestions = document.querySelector('#autocomplete-suggestions');
+        autocomplete_input = document.querySelector('#autocomplete-input');
+
+        new autoComplete({
+            selector: '#autocomplete-input',
+            minChars: 0,
+            source: function(term, suggest){
+                autocomplete_suggestions.innerHTML = '';
+                term = term.toLowerCase();
+                var choices = [['Raipur'], ['Naya Raipur'], ['Delhi'], ['Mumbai']];
+                var suggestions = [];
+                for (i=0;i<choices.length;i++)
+                    if (~(choices[i][0]+' '+choices[i][1]).toLowerCase().indexOf(term)) suggestions.push(choices[i]);
+                suggest(suggestions);
+            },
+            renderItem: function (item, search){
+                search = search.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+                var re = new RegExp("(" + search.split(' ').join('|') + ")", "gi");
+                return '<div class="autocomplete-suggestion" data-langname="'+item[0]+'" data-lang="'+item[0]+'" data-val="'+search+'">'+item[0].replace(re, "<b>$1</b>")+'</div>';
+            },
+            onSelect: function(e, term, item){
+                autocomplete_input.value = item.getAttribute('data-lang');
+                //alert('Item "'+item.getAttribute('data-langname')+' ('+item.getAttribute('data-lang')+')" selected by '+(e.type == 'keydown' ? 'pressing enter' : 'mouse click')+'.');
+            }
+        });
+
+  </script>
+</body>
+</html>
+
